@@ -1,0 +1,100 @@
+.form {
+  position: relative;
+  z-index: 1;
+  width: 560px;
+  padding: 0 30px 73px;
+  text-align: center;
+
+  &__wrap-input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: rem(13) rem(25) rem(11);
+    font-family: $mainFont;
+    font-size: rem(15);
+    color: $primary-color;
+    opacity: .65;
+    border: 1.5px solid $default-color;
+    transition: $default-transition;
+  }
+
+  &__textarea {
+    min-height: 88px;
+    padding-top: rem(17);
+  }
+
+  &__input::placeholder,
+  &__textarea::placeholder {
+    color: $primary-color;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    opacity: 1;
+  }
+
+  &__input-error {
+    position: absolute;
+    top: 17px;
+    left: calc(100% + 10px);
+    width: 206px;
+    text-align: left;
+    display: none;
+    font-size: rem(13);
+    line-height: 14px;
+    color: $default-color;
+  }
+  
+  &__wrap-input--error &__input-error {
+    display: block;
+  }
+  
+  &__wrap-input--error &__input {
+    border: 1.5px solid $danger-color;
+  }
+  
+  &__wrap-input--error &__input::placeholder {
+    color: $danger-color;
+  }
+
+  &__popup {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 30px);
+  }
+  
+  &__popup p {
+    padding: 5px 20px;
+    font-size: rem(30);
+    opacity: 0;
+    visibility: hidden;
+    transition: $default-transition;
+  }
+  
+  &__popup--success p {
+    color: $primary-color;
+    background-color: $warning-color;
+  }
+  
+  &__popup--error p {
+    color: $primary-color;
+    background-color: $danger-color;
+  }
+
+  &__popup--show p {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    width: 100%;
+  }
+}

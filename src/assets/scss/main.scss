@@ -1,0 +1,60 @@
+// Bootstrap
+// @import "~bootstrap/scss/bootstrap";
+
+
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/animations";
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $default-color;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 980px;
+  }
+}
+
+
+// Modules
+
+@import "modules/main-wrapper";
+@import "modules/header";
+@import "modules/logo";
+@import "modules/icon";
+@import "modules/section";
+@import "modules/fullscreen";
+@import "modules/socials";
+@import "modules/photo";
+@import "modules/text";
+@import "modules/tile";
+@import "modules/form";
+@import "modules/footer";

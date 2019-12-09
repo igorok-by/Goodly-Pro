@@ -1,0 +1,80 @@
+// Arctikascript
+@font-face {
+	font-family: 'Arctikascript';
+	src: url('/assets/fonts/Arctikascript/Arctikascript.eot');
+  src: local('☺'),
+       url('/assets/fonts/Arctikascript/Arctikascript.woff') format('woff'),
+       url('/assets/fonts/Arctikascript/Arctikascript.ttf') format('truetype'),
+       url('/assets/fonts/Arctikascript/Arctikascript.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// Akrobat
+@font-face {
+	font-family: 'Akrobat';
+	src: url('/assets/fonts/Akrobat/akrobat-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/Akrobat/akrobat-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+       url('/assets/fonts/Akrobat/akrobat-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/Akrobat/akrobat-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+       url('/assets/fonts/Akrobat/akrobat-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Akrobat/akrobat-bold.svg#akrobat-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Akrobat';
+	src: url('/assets/fonts/Akrobat/akrobat-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('/assets/fonts/Akrobat/akrobat-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		   url('/assets/fonts/Akrobat/akrobat-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		   url('/assets/fonts/Akrobat/akrobat-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		   url('/assets/fonts/Akrobat/akrobat-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Akrobat/akrobat-regular.svg#akrobat-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+// Tahoma
+@font-face {
+	font-family: 'Tahoma';
+	src: url('/assets/fonts/Tahoma/Tahoma.eot');
+  src: local('☺'),
+       url('/assets/fonts/Tahoma/Tahoma.woff') format('woff'),
+       url('/assets/fonts/Tahoma/Tahoma.ttf') format('truetype'),
+       url('/assets/fonts/Tahoma/Tahoma.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// ArialMT
+@font-face {
+  font-family: "ArialMT";
+  src: url('/assets/fonts/ArialMT/ARI.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/ArialMT/ARI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/ArialMT/ARI.otf') format('opentype'), /* Open Type Font */
+       url('/assets/fonts/ArialMT/ARI.svg') format('svg'), /* Legacy iOS */
+       url('/assets/fonts/ArialMT/ARI.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/ArialMT/ARI.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/ArialMT/ARI.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Corbel
+@font-face {
+  font-family: "Corbel";
+  src: url('/assets/fonts/Corbel/Corbel.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Corbel/Corbel.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Corbel/Corbel.otf') format('opentype'), /* Open Type Font */
+       url('/assets/fonts/Corbel/Corbel.svg') format('svg'), /* Legacy iOS */
+       url('/assets/fonts/Corbel/Corbel.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Corbel/Corbel.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Corbel/Corbel.woff2') format('woff2'); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

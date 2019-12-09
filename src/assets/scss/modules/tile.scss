@@ -1,0 +1,154 @@
+.tile {
+  position: relative;
+
+  &__title {
+    padding-bottom: rem(20);
+    color: $neutral-primary;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: $default-transition;
+  }
+
+  &:hover &__title {
+    color: $warning-color;
+  }
+
+  &__subtitle {
+    padding-bottom: rem(24);
+    font-size: rem(20);
+    font-weight: 600;
+    color: $neutral-primary;
+  }
+
+  &__descr {
+    width: 100%;
+    padding: 28px 33px 65px;
+    background-color: $default-color;
+  }
+
+  &__date {
+    padding-bottom: rem(26);
+    font-size: rem(15);
+    color: $primary-color;
+    opacity: 0.8;
+  }
+
+  &__date strong {
+    font-weight: 600;
+  }
+
+  &__backing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    opacity: 0;
+    visibility: hidden;
+    transition: $long-transition;
+  }
+
+  &__share {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: $long-transition;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: $long-transition;
+  }
+
+  &--photo:hover &__backing {
+    opacity: .65;
+    visibility: visible;
+  }
+
+  &--photo:hover &__share,
+  &--photo:hover &__decor {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--warning {
+    background-color: $warning-color;
+  }
+
+  &--portfolio-text {
+    position: absolute;
+    width: 485px; // 90.6%;
+    min-height: 830px;
+    padding: 85px 70px 85px 80px;
+  }
+
+  &--w450 {
+    width: 450px;
+  }
+
+  &--mt55 {
+    margin-top: 55px;
+  }
+
+  &--mb30 {
+    margin-bottom: 30px;
+  }
+
+  &--ml30 {
+    margin-left: 30px;
+  }
+
+  &--pr10 {
+    padding-right: 10px;
+  }
+
+  &--shadow {
+    box-shadow: 0 0 80px 2px rgba(43, 46, 102, 0.2);
+  }
+
+  @media screen and (max-width: $desktopWidth) {
+
+    &--portfolio-text {
+      width: 370px;
+      min-height: unset;
+    }
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+
+    &--portfolio-text {
+      padding: 10px 40px 45px 30px;
+    }
+
+    &--smd-pr15 {
+      padding-right: 15px;
+    }
+  }
+
+  @media screen and (max-width: $tableWidth) {
+  
+    &--portfolio-text {
+      position: static;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &--w450 {
+      width: 100%;
+    }
+  }
+}

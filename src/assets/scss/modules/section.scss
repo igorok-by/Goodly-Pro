@@ -1,0 +1,74 @@
+.section {
+  padding-top: 100px;
+
+  &__heading {
+    padding-top: rem(60);
+    padding-bottom: rem(25);
+    color: $primary-color;
+    font-family: $secondFont;
+    font-size: rem(40);
+    font-weight: 300;
+  }
+
+  &__heading--center {
+    text-align: center;
+  }  
+
+  &__heading--light {
+    color: $default-color;
+  }  
+
+  &__heading--pt0 {
+    padding-top: 0;
+  }  
+
+  &__subheading {
+    padding-top: rem(10);
+    padding-bottom: rem(33);
+    color: $primary-color;
+    font-family: $secondFont;
+    font-size: rem(26);
+    font-weight: 300;
+  }
+
+  &__bcgrnd-clients {
+    @include bcgrnd("/assets/img/background-2.png");
+  }
+
+  &__bcgrnd-contact {
+    @include bcgrnd("/assets/img/background-3.png");
+  }
+  
+  &--light {
+    background-color: $default-bckgr;
+  }
+
+  &--pt190 {
+    padding-top: 190px;
+  }
+
+  &--pt70 {
+    padding-top: 70px;
+  }
+
+  &--pb250 {
+    padding-bottom: 250px;
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+    
+    &__heading {
+      padding-top: rem(40);
+      padding-bottom: rem(15);
+    }
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    padding-top: 50px;
+
+    &--pb250 {
+      padding-bottom: 50px;
+    }
+  }
+}

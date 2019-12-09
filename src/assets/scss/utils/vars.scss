@@ -1,0 +1,45 @@
+// Font
+$mainFont                : 'Akrobat', Helvetica, Arial, sans-serif;
+$secondFont              : 'Trirong', Georgia, serif;
+
+// Size
+$mainFontColor           : #004734;
+$mainFontSize            : 21px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.4;
+
+$lgDesktopWidth          : 1440px;
+$desktopWidth            : 1200px;
+$smDesktopWidth          : 992px;
+$tableWidth              : 768px;
+$phoneWidth              : 576px;
+$smPhoneWidth            : 320px;
+
+// Main color
+$default-color           : #fff;
+$primary-color           : #2b2d5c;
+$success-color           : #1ebeb4;
+$danger-color            : #ff005d;
+$warning-color           : #f2c200;
+
+// Background
+$primary-bckgr           : #fefefe;
+$default-bckgr           : #f7f7fc;
+$warning-bckgr           : #fc0;
+$dark-bckgr              : #393A3F;
+
+// Neutral Color
+$neutral-primary         : #595666;
+$neutral-regular         : #2D2E2E;
+$neutral-secondary       : #AEAEAE;
+$neutral-placeholder     : #CACACA;
+
+// Border Color
+$border-base             : #DCDFE6;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;
+
+// Transition
+$default-transition      : all .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+$long-transition      : all 1s cubic-bezier(0.25, 0.1, 0.25, 1);

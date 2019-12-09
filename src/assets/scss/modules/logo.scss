@@ -1,0 +1,30 @@
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $default-color;
+  transition: $default-transition;
+
+  &__name {
+    position: relative;
+    top: rem(8);
+    margin-left: rem(9);
+    font-size: rem(20);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:hover * {
+    color: $warning-color;
+    fill: $warning-color;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &__name--pw-d-none {
+      display: none;
+    }
+  }
+}

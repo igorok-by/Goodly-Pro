@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 150px;
+  
+  &--fullscreen {
+    position: absolute;
+    bottom: 33px;
+    right: 100px;
+    z-index: 2;
+  }
+
+  &--footer {
+    width: 110px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    &--fullscreen {
+      bottom: 20px;
+      right: 30px;
+    }
+  }
+}

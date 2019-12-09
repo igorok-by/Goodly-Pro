@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Goodly-pro</title>
+</head>
+
+<body>
+  <!-- Set of icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  
+    <symbol id="icon-logo" viewBox="0 0 26 26">
+      <g>
+        <g>
+          <path d="M25.99991,9.20798v16.24967c0,0.29922 -0.24261,0.54189 -0.54169,0.54189h-16.24994c-0.29898,0 -0.54169,-0.24267 -0.54169,-0.54189v-1.62475h-3.24993v0.54189c0,0.2986 -0.24271,0.54127 -0.54169,0.54127c-0.29907,0 -0.54169,-0.24267 -0.54169,-0.54127v-14.68085c-2.43101,-0.27281 -4.33331,-2.31672 -4.33331,-4.81925c0,-2.68803 2.18725,-4.87518 4.87499,-4.87518c2.68774,0 4.87499,2.18715 4.87499,4.87518c0,2.50253 -1.90239,4.54644 -4.3334,4.81925v13.05548h3.25003v-13.54145c0,-0.29891 0.24261,-0.5422 0.54169,-0.5422h11.37495v-1.62444c0,-0.29891 0.24271,-0.54189 0.54169,-0.54189h2.16665c0.29898,0 0.54169,0.24298 0.54169,0.54189v1.62444h1.62497c0.29898,0 0.54169,0.24329 0.54169,0.5422zM5.41666,2.70805c0,-0.29922 -0.24271,-0.54189 -0.54169,-0.54189c-1.49288,0 -2.70834,1.21553 -2.70834,2.70854c0,0.29891 0.24261,0.54158 0.54159,0.54158c0.29907,0 0.54169,-0.24267 0.54169,-0.54158c0,-0.89611 0.72908,-1.62537 1.62506,-1.62537c0.29898,0 0.54169,-0.24236 0.54169,-0.54127zM22.74989,11.91621h-10.83326v10.83322h10.83326zM12.9999,17.33298c0,-2.38974 1.94349,-4.33329 4.33331,-4.33329c2.38981,0 4.33331,1.94355 4.33331,4.33329c0,2.38974 -1.94349,4.3336 -4.33331,4.3336c-2.38981,0 -4.33331,-1.94386 -4.33331,-4.3336zM15.16655,17.33298c0,0.29922 0.24271,0.54158 0.54169,0.54158c0.29898,0 0.54169,-0.24236 0.54169,-0.54158c0,-0.59689 0.48647,-1.08348 1.08328,-1.08348c0.29907,0 0.54169,-0.24267 0.54169,-0.54158c0,-0.29922 -0.24261,-0.54158 -0.54169,-0.54158c-1.19486,0 -2.16656,0.97193 -2.16665,2.16664z"></path>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 320 512">
+      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 512 512">
+      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 448 512">
+      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+    </symbol>
+    <symbol id="icon-more" viewBox="0 0 320 320">
+      <rect x="0" y="0" style="" id="e1_rectangle" width="320" height="320" rx="30" ry="30" />
+      <circle id="e2_circle" cx="100" cy="160" style="fill:#2b2d5c" r="40" />
+      <circle id="e3_circle" cx="220" cy="160" style="fill: #2b2d5c" r="40" />
+    </symbol>
+    <symbol id="share-alt" viewBox="0 0 448 512">
+      <path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path>
+    </symbol>
+    <symbol id="cross-1" viewBox="0 0 124 124">
+      <line x1="0" y1="62" x2="124" y2="62"/>
+      <line x1="62" y1="0" x2="62" y2="124"/>
+    </symbol>
+    <symbol id="cross-2" viewBox="0 0 382 181">
+      <line x1="0" y1="95" x2="382" y2="95"/>
+      <line x1="83" y1="0" x2="83" y2="181"/>
+    </symbol>
+    <symbol id="cross-3" viewBox="0 0 256 325">
+      <line x1="0" y1="254" x2="256" y2="254"/>
+      <line x1="126" y1="0" x2="126" y2="325"/>
+    </symbol>
+    <symbol id="cross-4" viewBox="0 0 256 164">
+      <line x1="0" y1="90" x2="256" y2="90"/>
+      <line x1="192" y1="0" x2="192" y2="164"/>
+    </symbol>
+    <symbol id="cross-5" viewBox="0 0 205 377">
+      <line x1="0" y1="148" x2="157" y2="148" stroke="#414490"/>
+      <line x1="48" y1="209" x2="205" y2="209" stroke="#7274a3"/>
+      <line x1="78" y1="0" x2="78" y2="377" stroke="#5f61a3"/>
+    </symbol>
+    <symbol id="cross-6" viewBox="0 0 124 124">
+      <line x1="0" y1="62" x2="124" y2="62"/>
+      <line x1="62" y1="0" x2="62" y2="124" stroke="#fc0"/>
+    </symbol>
+    <symbol id="scroll-1" viewBox="0 0 30 26">
+      <polyline points="0,10 15,26 30,10" fill="none" stroke="#fff"/>
+      <polyline points="0,0 15,16 30,0" fill="none" stroke="#f2c200"/>
+    </symbol>
+    <symbol id="scroll-2" viewBox="0 0 448 512">
+      <path d="M6.1 422.3l209.4-209.4c4.7-4.7 12.3-4.7 17 0l209.4 209.4c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L224 278.4 42.9 459.1c-4.7 4.7-12.3 4.7-17 0L6.1 439.3c-4.7-4.7-4.7-12.3 0-17zm0-143l19.8 19.8c4.7 4.7 12.3 4.7 17 0L224 118.4l181.1 180.7c4.7 4.7 12.3 4.7 17 0l19.8-19.8c4.7-4.7 4.7-12.3 0-17L232.5 52.9c-4.7-4.7-12.3-4.7-17 0L6.1 262.3c-4.7 4.7-4.7 12.3 0 17z"/>
+    </symbol>
+    <symbol id="grid-1" viewBox="0 0 504 504">
+      <line x1="210" y1="0" x2="210" y2="504"/>
+      <line x1="300" y1="0" x2="300" y2="504"/>
+      <line x1="0" y1="206" x2="504" y2="206"/>
+      <line x1="0" y1="296" x2="504" y2="296"/>
+    </symbol>
+  </svg><!-- end Set of icons -->
+  
+  <!-- Header -->
+  <header class="navbar navbar-fixed-top">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand" href="#">
+              <img class="header__logo" alt="Brand" src="assets/img/Слой_10.png">
+    
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#clients" class="nav__link">Clients</a>
+      <a href="#portfolio" class="nav__link">Portfolio</a>
+      <a href="#blog" class="nav__link">Blog</a>
+    </nav>
+  </header><!-- end Header -->
+
+  <!-- main wrapper -->
+  <main id="mainWrap" class="main-wrapper">
+
+    <!-- Section: Banner-Top -->
+    <section class="">
+
+    </section><!-- end Section: Banner-Top -->
+
+  </main><!-- end main wrapper -->
+
+  <!-- Footer -->
+  <!-- <footer class="footer">
+    <div class="wrapper wrapper--w1230">
+      <div class="row row--sp-between row--smd-justify-start">
+        <div class="col col--px30 col--mb30">
+          <a href="#" class="logo">
+            <div class="icon icon--logo">
+              <svg><use xlink:href="#icon-logo"></use></svg>
+            </div>
+            <p class="logo__name">Photography</p>
+          </a>
+          <div class="footer__block">
+            <h5 class="footer__subheading">Contact</h5>
+            <p class="text text--default text--pb0 text--fsize14">237 Church St, San Francisco,<br> 
+            CA 94114, USA<br>
+            nazmulhasanjingar@gmail.com</p>
+          </div>
+          <div class="footer__block">
+            <h5 class="footer__subheading">Follow me on:</h5>
+            <div class="socials socials--footer">
+              <a href="#" class="icon icon--link icon--facebook">
+                <svg><use xlink:href="#facebook"></use></svg>
+              </a>
+              <a href="#" class="icon icon--link">
+                <svg><use xlink:href="#twitter"></use></svg>
+              </a>
+              <a href="#" class="icon icon--link">
+                <svg><use xlink:href="#instagram"></use></svg>
+              </a>
+              <a href="#" class="icon icon--link">
+                <svg><use xlink:href="#icon-more"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col--px30 col--mb30">
+          <h4 class="footer__heading">Latest Blog Posts</h4>
+          <a href="#" class="footer__link">
+            <div class="row">
+              <div class="col col--mr30">
+                <img src="./assets/img/footer-blog-1.png" alt="">
+              </div>
+              <div class="col col--w266">
+                <p class="text text--default text--opacity-low text--pb6 text--lh-small">Design is the method of putting form and content together.</p>
+                <p class="text text--default text--pb0 text--lh-small text--fsize14"><strong>Life style</strong> - July 3, 2017</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="footer__link">
+            <div class="row">
+              <div class="col col--mr30">
+                <img src="./assets/img/footer-blog-2.png" alt="">
+              </div>
+              <div class="col col--w266">
+                <p class="text text--default text--opacity-low text--pb6 text--lh-small">Design is the method of putting form and content together.</p>
+                <p class="text text--default text--pb0 text--lh-small text--fsize14"><strong>Life style</strong> - July 3, 2017</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="footer__link footer__link--more">More...</a>
+        </div>
+
+        <div class="col col--px30 col--mb30">
+          <h4 class="footer__heading">Quick Link</h4>
+          <a href="#" class="footer__link footer__link--pb8">
+            <p class="text text--default text--pb0 text--fsize14 te"><strong>Home</strong></p>
+          </a>
+          <a href="#" class="footer__link footer__link--pb8">
+            <p class="text text--default text--pb0 text--fsize14 te"><strong>About</strong></p>
+          </a>
+          <a href="#" class="footer__link footer__link--pb8">
+            <p class="text text--default text--pb0 text--fsize14 te"><strong>Clients</strong></p>
+          </a>
+          <a href="#" class="footer__link footer__link--pb8">
+            <p class="text text--default text--pb0 text--fsize14 te"><strong>Portfolio</strong></p>
+          </a>
+          <a href="#" class="footer__link footer__link--pb8">
+            <p class="text text--default text--pb0 text--fsize14 te"><strong>Blog</strong></p>
+          </a>
+        </div>
+
+        <div class="col col--px30 col--mb30">
+          <h4 class="footer__heading">Instagram Update</h4>
+          <div class="row row--nowrap row--pb10">
+            <a href="#" class="tile tile--pr10">
+              <img src="./assets/img/footer-inst-1.png" alt="">
+            </a>
+            <div class="col col--sp-between">
+              <a href="#">
+                <img src="./assets/img/footer-inst-2.png" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/img/footer-inst-3.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="row row--nowrap row--sp-between">
+            <a href="#">
+              <img src="./assets/img/footer-inst-4.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/footer-inst-5.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/img/footer-inst-6.png" alt="">
+            </a>
+          </div>            
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="text text--extra-light text--fsize14 text--default text--opacity025 text--pb0">All Rights @ 2017 By Nazmul Hasan Jingar</p>
+    </div>
+  </footer> -->
+  <!-- end Footer -->
+
+</body>
+</html>
