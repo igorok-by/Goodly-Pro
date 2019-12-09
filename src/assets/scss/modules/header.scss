@@ -2,8 +2,41 @@
   width: 100%;
   background-color: #749c8d;
 
-  &__logo {
-    width: 44px;
-    height: 50px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link-wrap {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &__link {
+    width: 41px;
+    height: 41px;
+    margin-left: 15px;
+    border: 2px solid $default-color;
+    border-radius: 50%;
+    transition: $default-transition;
+  }
+
+  &__link:hover {
+    border-color: $warning-color;
+  }
+  
+  &__link--vk {
+    background: center no-repeat url(/assets/img/icon-vk.png);
+  }
+  
+  &__link--inst {
+    background: center no-repeat url(/assets/img/icon-inst.png);
+  }
+  
+  &__link--fb {
+    background: center no-repeat url(/assets/img/icon-fb.png);
   }
 }
