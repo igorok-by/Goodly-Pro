@@ -1,0 +1,42 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 247px;
+  background: center / cover no-repeat url(/assets/img/banner-1.png);
+  box-shadow: 0 0 10px rgba(16, 17, 17, 0.4);
+
+  &__title {
+    width: rem(484);
+    padding-top: 11px;
+    margin-left: 36%;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: -116px;
+    right: 40px;
+    z-index: 1;
+    width: 111px;
+    height: 231px;
+    background: bottom no-repeat url(/assets/img/banner-4.png);
+  }
+  
+  &__arrow-text {
+    position: absolute;
+    top: 122px;
+    right: -16px;
+    width: 147px;
+    font-size: 25px;
+    font-family: $figureFont;
+    color: $default-color;
+    transform: rotate(270deg);
+  }
+  
+  &__shadow {
+    position: absolute;
+    bottom: -52px;
+    width: 100%;
+    height: 500px;
+    background: bottom no-repeat url(/assets/img/banner-2.png);
+  }
+}
