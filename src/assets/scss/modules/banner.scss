@@ -77,6 +77,10 @@
 
   &__arrow--right {
     right: 40px;
-    transform: scale(-1, 1)
+    transform: scale(-1, 1);
+  }
+
+  &__icon-arrow {
+    @extend %icon-arrow;
   }
 }

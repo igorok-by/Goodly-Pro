@@ -1,154 +1,86 @@
 .tile {
-  position: relative;
+  padding: 23px 0 7px;
+  background-color: rgba(223, 228, 236, 0.7);
+  box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
 
-  &__title {
-    padding-bottom: rem(20);
-    color: $neutral-primary;
-    font-weight: 600;
+  & .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &__btn {
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+  }
+
+  &__btn--order {
+    font-size: rem(24);
+    font-weight: bold;
+    line-height: 43px;
+    letter-spacing: rem(1.35);
+    color: $default-color;
     text-transform: uppercase;
-    transition: $default-transition;
+    background-color: #3ab16f;
   }
-
-  &:hover &__title {
-    color: $warning-color;
-  }
-
-  &__subtitle {
-    padding-bottom: rem(24);
-    font-size: rem(20);
-    font-weight: 600;
-    color: $neutral-primary;
-  }
-
-  &__descr {
-    width: 100%;
-    padding: 28px 33px 65px;
-    background-color: $default-color;
-  }
-
-  &__date {
-    padding-bottom: rem(26);
-    font-size: rem(15);
-    color: $primary-color;
-    opacity: 0.8;
-  }
-
-  &__date strong {
-    font-weight: 600;
-  }
-
-  &__backing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $primary-color;
-    opacity: 0;
-    visibility: hidden;
-    transition: $long-transition;
-  }
-
-  &__share {
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: $long-transition;
-  }
-
-  &__decor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: $long-transition;
-  }
-
-  &--photo:hover &__backing {
-    opacity: .65;
-    visibility: visible;
-  }
-
-  &--photo:hover &__share,
-  &--photo:hover &__decor {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &--warning {
-    background-color: $warning-color;
-  }
-
-  &--portfolio-text {
-    position: absolute;
-    width: 485px; // 90.6%;
-    min-height: 830px;
-    padding: 85px 70px 85px 80px;
-  }
-
-  &--w450 {
-    width: 450px;
-  }
-
-  &--mt55 {
-    margin-top: 55px;
-  }
-
-  &--mb30 {
-    margin-bottom: 30px;
-  }
-
-  &--ml30 {
-    margin-left: 30px;
-  }
-
-  &--pr10 {
-    padding-right: 10px;
-  }
-
-  &--shadow {
-    box-shadow: 0 0 80px 2px rgba(43, 46, 102, 0.2);
-  }
-
-  @media screen and (max-width: $desktopWidth) {
-
-    &--portfolio-text {
-      width: 370px;
-      min-height: unset;
-    }
-  }
-
-  @media screen and (max-width: $smDesktopWidth) {
-
-    &--portfolio-text {
-      padding: 10px 40px 45px 30px;
-    }
-
-    &--smd-pr15 {
-      padding-right: 15px;
-    }
-  }
-
-  @media screen and (max-width: $tableWidth) {
   
-    &--portfolio-text {
-      position: static;
-      width: 100%;
-      margin-bottom: 30px;
-    }
+  &__btn--more {
+    font-size: rem(22);
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: rem(1.25);
+    color: #b83b11;
+    border: 2px solid #e96c41;
+  }
+  
+  &__btn--warn {
+    font-family: $linkFont;
+    font-size: rem(17);
+    color: #ab310c;
+    text-align: right;
+    text-decoration: underline dashed;
+    background-color: transparent;
+  }
+  
+  &__price {
+    padding: 9px 25px;
+    font-family: $priceFont;
+    text-align: left;
+  }
+  
+  &__price--crossed {
+    font-size: rem(30);
+    line-height: rem(24);
+    color: #575757;
+    text-decoration: line-through;
   }
 
-  @media screen and (max-width: $phoneWidth) {
+  &__price--big {
+    padding-top: 3px;
+    font-size: rem(37);
+    line-height: rem(29);
+    color: #d8481c;
+  }
 
-    &--w450 {
-      width: 100%;
-    }
+  &__text {
+    font-size: rem(26);
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__text--warn {
+    padding-top: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &__text--green {
+    padding-top: 25px;
+    padding-right: 20px;
+    font-size: rem(20);
+    color: #004734;
+    text-transform: none;
   }
 }

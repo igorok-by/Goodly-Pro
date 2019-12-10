@@ -1,25 +1,77 @@
 .socials {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 150px;
-  
-  &--fullscreen {
-    position: absolute;
-    bottom: 33px;
-    right: 100px;
-    z-index: 2;
+  width: 100%;
+  font-size: rem(18);
+  color: #828384;
+  letter-spacing: rem(0.35);
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+
+  &__descr {
+    width: 100%;
   }
 
-  &--footer {
-    width: 110px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;       
   }
 
-  @media screen and (max-width: $tableWidth) {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #aeaeae;
+    border-radius: 50%;
+    transition: $default-transition;
+  }
 
-    &--fullscreen {
-      bottom: 20px;
-      right: 30px;
-    }
+  &__link:hover {
+    background-color: #3ab16f;
+  }
+
+  &__link-vk {
+    @extend %icon-vk-sm;
+  }
+
+  &__link-inst {
+    @extend %icon-inst-sm;
+  }
+
+  &__link-fb {
+    @extend %icon-fb-sm;
+  }
+
+  &__link-ok {
+    @extend %icon-ok;
+  }
+
+  &__link-ytb {
+    @extend %icon-ytb;
+  }
+
+  &__link-in {
+    position: relative;
+    top: -1px;
+    @extend %icon-in;
+  }
+
+  &__link-pen {
+    @extend %icon-pen;
+  }
+
+  &__link-smile {
+    @extend %icon-smile;
+  }
+
+  &__link-ya {
+    @extend %icon-ya;
+  }
+
+  &__link-g {
+    @extend %icon-g;
   }
 }

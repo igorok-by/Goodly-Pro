@@ -16,6 +16,9 @@
   }
 
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 41px;
     height: 41px;
     margin-left: 15px;
@@ -28,15 +31,15 @@
     border-color: $warning-color;
   }
   
-  &__link--vk {
-    background: center no-repeat url(/assets/img/icon-vk.png);
+  &__link-vk {
+    @extend %icon-vk;
   }
   
-  &__link--inst {
-    background: center no-repeat url(/assets/img/icon-inst.png);
+  &__link-inst {
+    @extend %icon-inst;
   }
   
-  &__link--fb {
-    background: center no-repeat url(/assets/img/icon-fb.png);
+  &__link-fb {
+    @extend %icon-fb;
   }
 }

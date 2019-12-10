@@ -5,9 +5,10 @@
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
+@import "utils/sprites";
 @import "utils/fonts";
 @import "utils/reset";
-@import "utils/animations";
+// @import "utils/animations";
 
 html {
   line-height: $mainLineHeight;
@@ -50,12 +51,13 @@ body {
 @import "modules/header";
 @import "modules/logo";
 @import "modules/banner";
-@import "modules/icon";
+@import "modules/tile";
 @import "modules/section";
+
+@import "modules/icon";
 @import "modules/fullscreen";
 @import "modules/socials";
 @import "modules/photo";
 @import "modules/text";
-@import "modules/tile";
 @import "modules/form";
 @import "modules/footer";
