@@ -1,4 +1,6 @@
 .tile {
+  position: relative;
+  margin-top: 65px;
   padding: 23px 0 7px;
   background-color: rgba(223, 228, 236, 0.7);
   box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
@@ -8,11 +10,25 @@
     padding-left: 20px;
   }
 
+  &__img {
+    position: relative;
+    left: -10px;
+  }
+
   &__btn {
     display: block;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.85);
     text-align: center;
+    transition: $default-transition;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    text-decoration: none;
   }
 
   &__btn--order {
@@ -24,6 +40,10 @@
     text-transform: uppercase;
     background-color: #3ab16f;
   }
+
+  &__btn--order:hover {
+    color: $warning-color;
+  }
   
   &__btn--more {
     font-size: rem(22);
@@ -32,6 +52,11 @@
     letter-spacing: rem(1.25);
     color: #b83b11;
     border: 2px solid #e96c41;
+  }
+  
+  &__btn--more:hover {
+    color: $warning-color;
+    border-color: $warning-color;
   }
   
   &__btn--warn {
@@ -82,5 +107,136 @@
     font-size: rem(20);
     color: #004734;
     text-transform: none;
+  }
+
+  &__popup {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 35px 34px 35px 22px;
+    color: #004734;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: $default-transition;
+  }
+
+  &__popup--shown {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__popup-text {
+    line-height: 1.2;
+  }
+
+  &__popup-text:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__popup::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 91px;
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: rotate(45deg);
+  }
+
+  &__popup-close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    width: 23px;
+    height: 23px;
+    fill: #bf2426;
+    cursor: pointer;
+  }
+
+  &__popup-close svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -14.5px;
+    right: -10px;
+    background: url(/assets/img/tile-1.png) no-repeat;
+    width: 105px;
+    height: 90px;
+  }
+
+  &__decor-text {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-family: $priceFont;
+    font-size: rem(26);
+    font-weight: bold;
+    line-height: rem(26);
+    color: $default-color;
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    
+    &--ml-lg-19 {
+      margin-left: 19px;
+    }
+  
+    &--mr-lg-19 {
+      margin-right: 19px;
+    }
+  }
+  
+  @media screen and (max-width: $desktopWidth) {
+    
+    &__popup {
+      padding: 22px;
+    }
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    &__img {
+      position: static;
+      display: block;
+      height: 300px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__price {
+      text-align: center;
+    }
+
+    &__text {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__popup-text {
+      max-width: 480px;
+    }
+
+    &__popup:before {
+      right: 25%;
+    }
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &__popup::before {
+      display: none;
+    }
   }
 }

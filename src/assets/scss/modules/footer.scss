@@ -1,50 +1,36 @@
 .footer {
-  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 225px;
+  padding: 70px 20px;
+  font-size: rem(17);
   color: $default-color;
-  background-color: $primary-color;
-  border-top: 2px solid rgba($color: #fff, $alpha: .1);
+  background-color: #a4a4a5;
 
-  &__block {
-    padding-top: 35px;
+  &__text {
+    letter-spacing: rem(0.17);
+    opacity: 0.7;
   }
 
-  &__heading {
-    padding-bottom: rem(26);
-    font-size: rem(24);    
-  }
-
-  &__subheading {
-    padding-bottom: rem(15);
-    font-size: rem(20);
-    font-weight: 600;
+  &__text:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   &__link {
-    padding-bottom: 25px;
     color: $default-color;
+    text-decoration: underline;
     transition: $default-transition;
   }
 
-  &__link:hover,
-  &__link:hover * {
+  &__link:hover {
     color: $warning-color;
   }
 
-  &__link--more {
-    padding-bottom: 0;
-    padding-left: 100px;
-    text-transform: uppercase;
-  }
+  @media screen and (max-width: $phoneWidth) {
 
-  &__link--pb8 {
-    padding-bottom: 8px;
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: center;
-    padding: rem(24) rem(15);
-    border-top: 1px solid rgba($color: #fff, $alpha: .1);
-    text-align: center;
+    min-height: unset;
+    padding: 40px 20px;
   }
 }

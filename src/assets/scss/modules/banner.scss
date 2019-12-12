@@ -57,6 +57,7 @@
     color: #004734;
     text-transform: uppercase;
     letter-spacing: rem(1.92);
+    text-align: center;
   }
 
   &__text span {
@@ -82,5 +83,41 @@
 
   &__icon-arrow {
     @extend %icon-arrow;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+
+    &--top {
+      background-position: 34%;
+    }
+
+    &__title {
+      width: 60%;
+      margin-left: 38%;
+      padding-top: 40px;
+    }
+
+    &__badge {
+      display: none;
+    }
+
+    &__arrow--left {
+      left: 5px;
+    }
+  
+    &__arrow--right {
+      right: 5px;
+    }
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &--second {
+      background: none;
+    }
+
+    &__arrow {
+      display: none;
+    }
   }
 }

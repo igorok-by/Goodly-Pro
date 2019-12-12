@@ -6,7 +6,7 @@
 
   &:hover {
     color: $warning-color;
-    outline: none;
+    text-decoration: none;
   }
   
   &__img {
@@ -19,5 +19,12 @@
     font-size: rem(26);
     text-transform: uppercase;
     letter-spacing: -1.17px;
+  }
+
+  @media screen and (max-width: $phoneWidth) {
+
+    &__name {
+      display: none;
+    }
   }
 }

@@ -1,4 +1,4 @@
-// Bootstrap
+// Bootstrap 4
 // @import "~bootstrap/scss/bootstrap";
 
 
@@ -16,13 +16,13 @@ html {
 	color: $mainFontColor;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
+		font-size: 19px;
   }
   @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
+    font-size: 18px;
   }
   @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -49,15 +49,10 @@ body {
 
 @import "modules/main-wrapper";
 @import "modules/header";
+@import "modules/section";
 @import "modules/logo";
 @import "modules/banner";
 @import "modules/tile";
-@import "modules/section";
-
-@import "modules/icon";
-@import "modules/fullscreen";
 @import "modules/socials";
-@import "modules/photo";
-@import "modules/text";
 @import "modules/form";
 @import "modules/footer";

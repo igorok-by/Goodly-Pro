@@ -1,3 +1,14 @@
 .section {
   padding-top: 65px;
+  
+  &--pt80 {
+    padding-top: 80px;
+  }
+
+  @media screen and (max-width: $tableWidth) {
+    
+    &--pt80 {
+      padding-top: 65px;
+    }
+  }
 }
